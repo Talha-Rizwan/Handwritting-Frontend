@@ -28,7 +28,7 @@ const AddComment = () => {
           placeholder="Type your feedback here..."
           rows={4}
           cols={50}
-          className="border border-gray-300 px-4 py-2 rounded-lg w-full focus:outline-none focus:ring focus:border-blue-500"
+          className="text-black border border-gray-300 px-4 py-2 rounded-lg w-full focus:outline-none focus:ring focus:border-blue-500"
         ></textarea>
         <button
           type="submit"
