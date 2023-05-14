@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import FileUploader from "./FileUploader"
+import AddComment from "./AddComment";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="p-6 bg-blue-500 text-gray-100 flex flwx-row justify-around">
+	<div className="flex flex-col-reverse md:flex-row md:justify-center">
+		<div className="w-full px-6 py-16 rounded-md sm:px-12 md:px-16 xl:col-span-2 dark:bg-gray-900">
+			<span className="block mb-2 dark:text-violet-400">The Answer is :</span>
+			<h1 className="text-5xl font-extrabold dark:text-gray-50">Write Answer here!</h1>
+		{/* <textarea className="m-8 textarea textarea-warning" placeholder="Give your feedback!"></textarea> */}
+		<AddComment />
+
+		</div>
+
+    <FileUploader />
+	</div>
+</section>
   );
 }
 
